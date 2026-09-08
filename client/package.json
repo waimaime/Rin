@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
     "check": "tsc",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "i18n": "i18next",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "bun test --coverage --coverage-reporter=text --coverage-reporter=lcov"
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@rin/api": "workspace:*",
