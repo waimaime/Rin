@@ -1,13 +1,6 @@
 {
   "name": "rin",
   "version": "0.3.0",
-  "packageManager": "bun@1.3.13",
-  "workspaces": [
-    "packages/*",
-    "cli",
-    "server",
-    "client"
-  ],
   "private": true,
   "scripts": {
     "dev": "bun cli/bin/rin.ts dev",
