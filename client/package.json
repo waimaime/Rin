@@ -4,20 +4,17 @@
   "version": "0.3.0",
   "type": "module",
   "scripts": {
-    "dev": "bunx --bun vite",
-    "build": "tsc && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "check": "tsc",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "i18n": "i18next",
-    "test": "bun test",
-    "test:watch": "bun test --watch",
-    "test:coverage": "bun test --coverage --coverage-reporter=text --coverage-reporter=lcov"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "@rin/api": "workspace:*",
-    "@rin/config": "workspace:*",
-    "@rin/ui": "workspace:*",
     "@astroimg/timeago": "^1.1.6",
     "@monaco-editor/react": "^4.6.0",
     "@prosemirror-adapter/react": "^0.2.6",
